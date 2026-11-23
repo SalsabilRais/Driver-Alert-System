@@ -1,53 +1,26 @@
-# 🚨 Driver Alert System (Multimodal)
+# 🚨 Multimodal Driver Safety & Alert System
 
-## 📌 Description
-This project is a multimodal alert system designed to detect driver inattention or fatigue and trigger alerts using visual and sound signals.
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
+  <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white" alt="Arduino" />
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
+  <img src="https://img.shields.io/badge/Serial_UART-4B5563?style=for-the-badge" alt="Serial UART" />
+</p>
 
-The system combines simple detection logic with real-time alerts to improve safety.
-
----
-
-## 🎯 Objective
-- Detect driver distraction or fatigue
-- Trigger alerts using LEDs and buzzer
-- Provide a simple safety system
-
----
-
-## 🛠️ Technologies Used
-- Arduino
-- LEDs
-- Buzzer
-- Serial communication
+## 📌 Overview
+A real-time **Driver Monitoring & Multimodal Alert System** combining **Computer Vision** and **Embedded Hardware**. The system analyzes live webcam footage to detect driver distraction (such as smartphone usage) or fatigue, and immediately triggers synchronized visual and acoustic warnings via an Arduino microcontroller.
 
 ---
 
-## ⚙️ How It Works
-- The system monitors driver behavior
-- When inattention is detected:
-  - A visual alert (LED) is activated
-  - A sound alert (buzzer) is triggered
+## 🎯 Key Objectives
+- **Real-Time Behavioral Analysis:** Continuously monitor the driver using computer vision algorithms.
+- **Distraction Detection:** Identify unsafe behaviors (e.g., phone usage while driving) and trigger an on-screen `STATUS: ALERT!` warning.
+- **Multimodal Hardware Feedback:** Bridge software detection with physical actuators (LEDs + Buzzer) for immediate driver reaction.
 
 ---
 
-## 📸 Project Preview
-<img width="655" height="1179" alt="PIC" src="https://github.com/user-attachments/assets/b53fbddd-8400-4339-97f0-62e4b70e257d" />
+## ⚙️ System Architecture & Workflow
 
-
----
-
-## 🚀 Skills Learned
-- Embedded systems basics
-- Circuit design
-- Real-time alert systems
-- Hardware-software interaction
-
----
-
-## ⚠️ Note
-The original code for this project is currently unavailable, but it will be recreated and added soon.
-
----
-
-## 👩‍💻 Author
-- Salsabil Rais
+```text
+[ Webcam Feed ] ──► [ Python + OpenCV Detection ] ──► ( Serial / UART ) ──► [ Arduino ] ──► [ Visual (LED) + Audio (Buzzer) ]
